@@ -12,7 +12,7 @@ Virtual Private LAN Service = VPLS = Layer 2 MPLS VPN
 
 * Variants
  * RFC 4761 - Virtual Private LAN Service (VPLS) - Using BGP for Auto-Discovery and Signaling
- * RFC ???? for LDP
+ * RFC 4762 - Virtual Private LAN Service (VPLS) Using Label Distribution Protocol (LDP) Signaling
 
 * BGP auto-discovery
  * PEs auto-discover other PEs in the same VPLS instance
