@@ -10,6 +10,37 @@ OSPF notes
 
 ## Troubleshooting
 
+### Neighborship problems checklist
+
+Source: [iNET ZERO](https://www.inetzero.com/what-is-your-ospf-neighbor-doing-adjancency-problems-in-ospf/)
+
+1. Interfaces present in [edit protocols ospf]
+2. Interfaces are not passive
+3. Interfaces are not down
+4. No FF is blocking OSPF protocol 89 
+5. Area mismatch
+6. Timer mismatch
+7. Auth. mismatch
+8. Area type mismatch
+9. Subnet mask mismatch
+10. Duplicate router-id
+11. MTU mismatch
+12. DR priority = 0 on both routers
+13. Duplicate interface ip address
+14. Interface type mismatch
+
+### Tools
+
+Show commands.
+Traceoptions.
+Monitor traffic interface.
+
+```
+monitor traffic interface em1 size 1500 no-resolve detail | matching “ip proto ospf”
+```
+
+### Authentication debugs
+
 Authentication problem is best identified using traceoptions:
 
 ```
@@ -97,3 +128,7 @@ Jul 10 19:25:18.489407 OSPF hello from 172.30.0.13 (IFL 72, area 0.0.0.0) absorb
 Jul 10 19:25:19.197534 OSPF periodic xmit from 172.30.0.14 to 224.0.0.5 (IFL 72 area 0.0.0.0)
 Jul 10 19:25:19.826699 OSPF hello from 172.30.0.26 (IFL 74, area 0.0.0.0) absorbed
 ```
+
+## Resources
+
+[iNET ZERO](https://www.inetzero.com/what-is-your-ospf-neighbor-doing-adjancency-problems-in-ospf/)
