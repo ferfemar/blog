@@ -1,7 +1,7 @@
 +++
-title = "Python"
+title = "GIT"
 +++
 
-# Python
+# GIT
 
 {{% children style="h2" description="true" %}}
