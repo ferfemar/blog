@@ -12,7 +12,19 @@ head = "List of materials to study"
 * also check the spotify github for production playbooks
 * NAPALM - Elisa Jasinska & David Barroso, NANOG64
 * How Facebook Learned to Stop Worrying and Love the Network (Jose Leitao, David Rothera, RIPE71)
+* Compliance tools
+    *  networklore.com/nk-compare-configs
+    *  github.com/cidrblock/netcopa
+*  Parsing tool TextFSM
+
+## Books
+
+* Mythical Man-Month - Frederic P. Brooks, 1975
 
 ## Solutions
 
 * Initial provisioning for Cisco - inc. answering / skipping the initial setup dialog - <https://github.com/bittsi/bnas/tree/master/Staging/prepare/tasks>
+
+## Other
+
+<https://www.ansible.com/power-of-callback-plugins>

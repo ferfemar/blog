@@ -2,7 +2,7 @@
 categories = ["netops", "python", "virtualenv"]
 date = "2019-05-20"
 description = "Notes for working with virualenvs"
-title = "Python basics"
+title = "Python Virtual Enviroments"
 +++
 
 Using mkvirtualenv w/ Python 3

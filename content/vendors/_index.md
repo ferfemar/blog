@@ -1,7 +1,7 @@
 +++
-title = "IOS-XE"
+title = "Vendor specifics"
 +++
 
-IOS XE Notes
+Vendor specifics notes
 
 {{% children style="h2" description="true" %}}
