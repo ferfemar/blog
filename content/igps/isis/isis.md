@@ -1,12 +1,10 @@
 +++
 categories = ["igps", "isis"]
 date = "2019-06-16"
-description = "Integrated IS-IS"
-title = "IS-IS"
-head = "IS-IS"
+description = "Integrated IS-IS notes"
+title = "Integrated IS-IS notes"
+head = "Integrated IS-IS notes"
 +++
-
-Integrated IS-IS
 
 ## Basics
 
@@ -14,7 +12,7 @@ Integrated IS-IS
 * [RFC 1195](https://tools.ietf.org/pdf/rfc1195.pdf) defined for (also) routing TCP/IP
 * SPF algoritm / Dijkstra
 
-## ISO Adressing
+### ISO Adressing
 
 * Address consists of: IDP + DSP
     * IDP = Initial Domain Part
@@ -28,7 +26,7 @@ Integrated IS-IS
     * area address in OSI addressing allows l1 routers to identify packets to destinations outside their area
 
 
-## ISO Areas
+### ISO Areas
 
 * Level 1 and Level 2 areas
 * Level 1 
@@ -44,7 +42,7 @@ Integrated IS-IS
         * only L2 LSPs will flow on link between two different areas
 * L2 router might be also L1 router in one area  
 
-## IP areas
+### IP areas
 
 * Level 1
     * L1 routers route via L1 routing if destination address MATCHES [IP address, subnet mask, metric] found reachable withing the area
@@ -53,7 +51,7 @@ Integrated IS-IS
     * L2 routers include in their L2 LSPs a comple list of  [IP address, subnet mask, metric] specifying all IP addresses found in their area, this is obtained from L1 routers (or configured manually)
     * default routes are permitted only at L2
 
-## Broadcast segments (LANs)
+### Broadcast segments (LANs)
 
 * Problem:
     * multiple routers on LAN - each router would announce a link to every other router (n^2 links reported)
@@ -61,7 +59,7 @@ Integrated IS-IS
     * create a pseudonode representing the LAN, each router announces it has a link to the pseudonode
     * one router is selected to send LSP on behalf of the pseudonode (designated router); reporting links to all of the router on the LAN
 
-## 3-Way handshaking
+### 3-Way handshaking
 
 * LAN Hello uses the IS Neighbors TLV to list all neighbors from which a hello has been received
 * P2P Hellos do not carry IS Neighbors TLVs. ISO 10589 prescribes only two-way handshaking in this case. RFC 3373 specifies P2P Three-way Adjacency TLV (240)
@@ -77,13 +75,13 @@ Point-to-point Adjacency State (t=240, l=15)
 ```
 
 
-## Adjacency states
+### Adjacency states
 
 * Up
 * Initializing
 * Down
 
-## Debug outputs
+### Debug outputs
 
 **set protocols isis traceoptions flag state**
 reset isis adjacency

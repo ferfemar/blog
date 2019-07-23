@@ -1,0 +1,763 @@
+root> show log ospf_debug
+Jul 22 16:16:44  clear-log[1296]: logfile cleared
+Jul 22 16:17:03 trace_on: Tracing to "/var/log/ospf_debug" started
+Jul 22 16:17:03.958776 task_job_create_background: create prio 3 job Flood timer for task OSPF
+Jul 22 16:17:03.958867 task_job_create_background: create prio 2 job Route recalc timer for task OSPF
+Jul 22 16:17:03.959355 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.959418 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:43
+Jul 22 16:17:03.959475 task_job_create_background: create prio 1 job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.959576 task_process_events: write ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.959866 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.961377 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.961430 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:03
+Jul 22 16:17:03.961740 background dispatch running job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.961800 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:43
+Jul 22 16:17:03.961844 task_job_delete: delete background job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.961903 background dispatch completed job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.962155 background dispatch running job Route recalc timer for task OSPF
+Jul 22 16:17:03.962240 Starting full SPF refresh for topology default
+Jul 22 16:17:03.962342 SPF starting for area 0.0.0.0
+Jul 22 16:17:03.962382 SPF finished for area 0.0.0.0
+Jul 22 16:17:03.962490  SPF elapsed time 0.000134s
+Jul 22 16:17:03.962574 SPF add stubs starting for area 0.0.0.0
+Jul 22 16:17:03.962613 SPF add stubs finished for area 0.0.0.0
+Jul 22 16:17:03.962687  Stub elapsed time 0.000122s
+Jul 22 16:17:03.962763 SPF add inter area starting for area 0.0.0.0
+Jul 22 16:17:03.963005 SPF add inter area Summary starting for area 0.0.0.0
+Jul 22 16:17:03.963046 SPF add inter area Summary finished for area 0.0.0.0
+Jul 22 16:17:03.963132 SPF add inter area ASBRSum starting for area 0.0.0.0
+Jul 22 16:17:03.963175 SPF add inter area ASBRSum finished for area 0.0.0.0
+Jul 22 16:17:03.963214 SPF add inter area finished for area 0.0.0.0
+Jul 22 16:17:03.963289  Interarea elapsed time 0.000525s
+Jul 22 16:17:03.963371 SPF add external starting
+Jul 22 16:17:03.963411 SPF add external finished
+Jul 22 16:17:03.963532  External elapsed time 0.000133s
+Jul 22 16:17:03.963630 SPF add NSSA starting
+Jul 22 16:17:03.963670 SPF add NSSA finished
+Jul 22 16:17:03.963746  NSSA elapsed time 0.000127s
+Jul 22 16:17:03.963838 SPF post spf cleanup starting
+Jul 22 16:17:03.963909 SPF post spf cleanup finished
+Jul 22 16:17:03.963985  Cleanup elapsed time 0.000164s
+Jul 22 16:17:03.964095    Total elapsed time 0.001856s
+Jul 22 16:17:03.964143 Finished full SPF refresh for topology default
+Jul 22 16:17:03.964183 task_job_delete: delete background job Route recalc timer for task OSPF
+Jul 22 16:17:03.964223 background dispatch completed job Route recalc timer for task OSPF
+Jul 22 16:17:03.964593 rt_flash_update_callback: flash OSPF (inet.0) start
+Jul 22 16:17:03.964648 Starting flash processing for topology default
+Jul 22 16:17:03.964734 OSPF:  multicast address 224.0.0.5/32, route ignored
+Jul 22 16:17:03.964774 Finished flash processing for topology default
+Jul 22 16:17:03.964814 rt_flash_update_callback: flash OSPF (inet.0) done
+Jul 22 16:17:03.966232 background dispatch running job Flood timer for task OSPF
+Jul 22 16:17:03.966283 task_timer_reset: reset OSPF_Flood timer
+Jul 22 16:17:03.966323 task_job_delete: delete background job Flood timer for task OSPF
+Jul 22 16:17:03.966363 background dispatch completed job Flood timer for task OSPF
+Jul 22 16:17:03.972473 IFL sp-0/0/0.0 iflchange 0x0
+Jul 22 16:17:03.973060 IFL sp-0/0/0.16383 iflchange 0x0
+Jul 22 16:17:03.973474 IFL ge-0/0/0.0 iflchange 0x0
+Jul 22 16:17:03.974093 IFL lo0.32768 iflchange 0x0
+Jul 22 16:17:03.974500 IFL lo0.16385 iflchange 0x0
+Jul 22 16:17:03.974898 IFL lo0.16384 iflchange 0x0
+Jul 22 16:17:03.975757 IFL lo0.0 iflchange 0x0
+Jul 22 16:17:03.976492 IFL lo0.0 addr (1.1.1.1) ifachange 0x0
+Jul 22 16:17:03.977760 IFL ge-0/0/0.0 addr (192.168.0.0) ifachange 0x0
+Jul 22 16:17:03.977806 task_timer_ucreate: created timer OSPF_DR Wait  flags <>
+Jul 22 16:17:03.977846 task_timer_ucreate: created timer OSPF_Intf Ack  flags <>
+Jul 22 16:17:03.977886 task_timer_ucreate: created timer OSPF_Intf Flood  flags <>
+Jul 22 16:17:03.977943 Interface ge-0/0/0.0 (192.168.0.0) area 0.0.0.0: speed changed 0 -> 1000000000
+Jul 22 16:17:03.978001 task_job_create_background: create prio 1 job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.978043 task_job_create_background: create prio 4 job Interface event for task OSPF
+Jul 22 16:17:03.978082 OSPF Interface event job created at restart phase 0.
+Jul 22 16:17:03.978130 ospf_trigger_build_telink_lsas : No peer found
+Jul 22 16:17:03.978255 Add interface ge-0/0/0.0 area 0.0.0.0
+Jul 22 16:17:03.979222 IFL sp-0/0/0.0 addr ((null)) ifachange 0x0
+Jul 22 16:17:03.981119 rt_flash_update_callback: flash OSPF (inet.0) start
+Jul 22 16:17:03.981162 Starting flash processing for topology default
+Jul 22 16:17:03.981238 Finished flash processing for topology default
+Jul 22 16:17:03.981278 rt_flash_update_callback: flash OSPF (inet.0) done
+Jul 22 16:17:03.982593 background dispatch running job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.982666 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:43
+Jul 22 16:17:03.982732 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:43
+Jul 22 16:17:03.982774 task_job_delete: delete background job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.982815 background dispatch completed job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.983662 background dispatch running job Interface event for task OSPF
+Jul 22 16:17:03.983773 Interface ge-0/0/0.0 area 0.0.0.0 event NeighborChange
+Jul 22 16:17:03.983814 task_job_create_background: create prio 1 job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.983899 Interface ge-0/0/0.0 area 0.0.0.0 event Up
+Jul 22 16:17:03.983950 Interface ge-0/0/0.0 (192.168.0.0) area 0.0.0.0 state changed from Down to PtToPt
+Jul 22 16:17:03.984003 OSPF trigger router LSA 0x9408000 build for area 0.0.0.0 lsa-id 1.1.1.1
+Jul 22 16:17:03.984043 ospf_trigger_build_telink_lsas : No peer found
+Jul 22 16:17:03.984097 task_timer_ucreate: created timer OSPF_internal timer  flags <>
+Jul 22 16:17:03.984146 task_timer_uset: timer OSPF_internal timer <Touched> set to offset 5 at 16:17:08
+Jul 22 16:17:03.984962 OSPF full SPF scheduled for topology default
+Jul 22 16:17:03.985042 OSPF SPF scheduled for topology default in 4.979018s
+Jul 22 16:17:03.985099 task_timer_uset: timer OSPF_Route recalc timer <Touched SpawnJob> set to offset 4.979018 at 16:17:08
+Jul 22 16:17:03.992429 OSPF Interface event job processed 2 events.
+Jul 22 16:17:03.992485 OSPF Interface event job deleted.
+Jul 22 16:17:03.992529 task_job_delete: delete background job Interface event for task OSPF
+Jul 22 16:17:03.992569 background dispatch completed job Interface event for task OSPF
+Jul 22 16:17:03.993431 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.993533 Clear inverse links started for area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:03.993574 Clear inverse links finished for area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:03.993643 ospf_set_lsdb_state: Router LSA 1.1.1.1 adv-rtr 1.1.1.1 state GEN_PENDING->QUIET
+Jul 22 16:17:03.993684 task_timer_reset: reset OSPF_LSA gen
+Jul 22 16:17:03.993750 task_timer_uset: timer OSPF_LSA gen <Touched Processing> set to offset 50:00 at 17:07:03
+Jul 22 16:17:03.994017 OSPF built router LSA, area 0.0.0.0, link count 1
+Jul 22 16:17:03.994067 LSA Router 1.1.1.1 1.1.1.1 flood state Idle -> Idle, new LSA
+Jul 22 16:17:03.994109 task_timer_reset: reset OSPF_LSA age
+Jul 22 16:17:03.994150 task_timer_set_oneshot_latest: timer OSPF_LSA age interval set to 1:00:00
+Jul 22 16:17:03.994403 LSA analysis started for area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:03.994458 LSA analysis finished for area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:03.994499 Setup inverse links started for area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:03.994538 Setup inverse links finished for area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:03.994594 LSA Router 1.1.1.1 1.1.1.1 flood state Idle -> Standby send, flooding
+Jul 22 16:17:03.994652 Updating LSA Router 1.1.1.1 1.1.1.1 (flood state Standby send)
+Jul 22 16:17:03.994694 LSA Router 1.1.1.1 1.1.1.1 flood state Standby send -> Wait nbr ack, not queued
+Jul 22 16:17:03.994733 OSPF flooding restarted, depth 1, rexmit 0
+Jul 22 16:17:03.994773 task_job_create_background: create prio 3 job OSPF flood for task OSPF
+Jul 22 16:17:03.995065 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:03.995209 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:03
+Jul 22 16:17:04.008312 ppmd_ospf_intf_auth_key_select : interface ge-0/0/0.0
+Jul 22 16:17:04.008665 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:04.008958 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:04.009010 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:04
+Jul 22 16:17:04.009051  No OSPF authentication key active (now : 137487360)
+Jul 22 16:17:04.009352 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:04.009666 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:04.009717 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:04
+Jul 22 16:17:04.009966 OSPF installed PPM interface IFL 70, addr 192.168.0.0, area 0.0.0.0, ID 0.0.0.0, rtbl idx 0
+Jul 22 16:17:04.016863 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:04.017176 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:04.017248 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:04
+Jul 22 16:17:04.017291 OSPF cannot stop xmit from 192.168.0.0 to 224.0.0.5 (IFL 70, area 0.0.0.0, ID 0.0.0.0, rtbl idx 0)
+Jul 22 16:17:04.017627 background dispatch running job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:04.017694 OSPF restart signaling: set L bit in hellos sent on interface ge-0/0/0.0.
+Jul 22 16:17:04.017782 OSPF sent Hello 192.168.0.0 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:04.017826   Version 2, length 44, ID 1.1.1.1, area 0.0.0.0
+Jul 22 16:17:04.017866   mask 255.255.255.254, hello_ivl 10, opts 0x12, prio 128
+Jul 22 16:17:04.017906   dead_ivl 40, DR 0.0.0.0, BDR 0.0.0.0
+Jul 22 16:17:04.017946 OSPF restart signaling: Add LLS data for Hello packet on interface ge-0/0/0.0.
+Jul 22 16:17:04.017999 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:44
+Jul 22 16:17:04.018050 task_job_delete: delete background job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:04.018092 background dispatch completed job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:04.018369 background dispatch running job OSPF flood for task OSPF
+Jul 22 16:17:04.018409 task_timer_reset: reset OSPF_Flood timer
+Jul 22 16:17:04.018450 OSPF LSA Router 1.1.1.1 1.1.1.1 on no ge-0/0/0.0 area 0.0.0.0 rexmit lists, no flood
+Jul 22 16:17:04.018504 LSA Router 1.1.1.1 1.1.1.1 flood state Wait nbr ack -> Idle, not queued
+Jul 22 16:17:04.018545 task_job_delete: delete background job OSPF flood for task OSPF
+Jul 22 16:17:04.019175 background dispatch completed job OSPF flood for task OSPF
+Jul 22 16:17:04.021597 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:04.021931 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:04.021992 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:04
+Jul 22 16:17:04.022034 OSPF programmed periodic xmit from 192.168.0.0 to 224.0.0.5 (IFL 70, area 0.0.0.0, ID 0.0.0.0, rtbl idx 0) interval 10 0
+Jul 22 16:17:05.608303 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.608684 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.608749 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:05
+Jul 22 16:17:05.608796 OSPF rcvd Hello 192.168.0.1 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:05.608842   Version 2, length 44, ID 2.2.2.2, area 0.0.0.0
+Jul 22 16:17:05.608882   checksum 0x0, authtype 0
+Jul 22 16:17:05.608922   mask 255.255.255.254, hello_ivl 10, opts 0x12, prio 128
+Jul 22 16:17:05.608961   dead_ivl 40, DR 0.0.0.0, BDR 0.0.0.0
+Jul 22 16:17:05.609013 OSPF restart signaling: Received hello with LLS data from nbr ip=192.168.0.1 id=2.2.2.2.
+Jul 22 16:17:05.609058 task_timer_ucreate: created timer OSPF_Neighbor rexmit  flags <>
+Jul 22 16:17:05.609099 task_timer_ucreate: created timer OSPF_resync timeout  flags <>
+Jul 22 16:17:05.609139 task_timer_ucreate: created timer OSPF_resync timeout  flags <>
+Jul 22 16:17:05.609180 task_timer_ucreate: created timer OSPF_Grace timer  flags <>
+Jul 22 16:17:05.609238 task_job_create_background: create prio 1 job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.609281 OSPF neighbor 192.168.0.1 (ge-0/0/0.0 area 0.0.0.0) state changed from Down to Init due to HelloRcvd (event reason: Hello message received) (nbr helped: 0)
+Jul 22 16:17:05.609322 OSPF restart signaling: Received hello with LR bit set from nbr ip=192.168.0.1 id=2.2.2.2. Set oob-resync capabilty 1.
+Jul 22 16:17:05.609773 background dispatch running job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.609828 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:45
+Jul 22 16:17:05.609872 OSPF restart signaling: set L bit in hellos sent on interface ge-0/0/0.0.
+Jul 22 16:17:05.609914 OSPF sent Hello 192.168.0.0 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:05.609954   Version 2, length 48, ID 1.1.1.1, area 0.0.0.0
+Jul 22 16:17:05.609994   mask 255.255.255.254, hello_ivl 10, opts 0x12, prio 128
+Jul 22 16:17:05.610046   dead_ivl 40, DR 0.0.0.0, BDR 0.0.0.0
+Jul 22 16:17:05.610126   neighbor 2.2.2.2
+Jul 22 16:17:05.610257 OSPF restart signaling: Add LLS data for Hello packet on interface ge-0/0/0.0.
+Jul 22 16:17:05.611732 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:45
+Jul 22 16:17:05.611778 task_job_delete: delete background job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.611828 background dispatch completed job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.612133 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.612497 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.612549 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:05
+Jul 22 16:17:05.612591 OSPF neighbor 2.2.2.2 (IFL 70, area 0.0.0.0, rtbl idx 0) set, 40 0
+Jul 22 16:17:05.613325 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.613670 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.613725 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:05
+Jul 22 16:17:05.613765 OSPF programmed periodic xmit from 192.168.0.0 to 224.0.0.5 (IFL 70, area 0.0.0.0, ID 0.0.0.0, rtbl idx 0) interval 10 0
+Jul 22 16:17:05.727022 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.727369 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.727435 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:05
+Jul 22 16:17:05.727484 OSPF rcvd Hello 192.168.0.1 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:05.727524   Version 2, length 48, ID 2.2.2.2, area 0.0.0.0
+Jul 22 16:17:05.727563   checksum 0x0, authtype 0
+Jul 22 16:17:05.727604   mask 255.255.255.254, hello_ivl 10, opts 0x12, prio 128
+Jul 22 16:17:05.727644   dead_ivl 40, DR 0.0.0.0, BDR 0.0.0.0
+Jul 22 16:17:05.727705   neighbor 1.1.1.1
+Jul 22 16:17:05.727748 OSPF restart signaling: Received hello with LLS data from nbr ip=192.168.0.1 id=2.2.2.2.
+Jul 22 16:17:05.727790 OSPF restart signaling: Received hello with LR bit set from nbr ip=192.168.0.1 id=2.2.2.2. Set oob-resync capabilty 1.
+Jul 22 16:17:05.727836 OSPF neighbor 192.168.0.1 (ge-0/0/0.0 area 0.0.0.0) state changed from Init to ExStart due to 2WayRcvd (event reason: neighbor detected this router) (nbr helped: 0)
+Jul 22 16:17:05.728034 RPD_OSPF_NBRUP: OSPF neighbor 192.168.0.1 (realm ospf-v2 ge-0/0/0.0 area 0.0.0.0) state changed from Init to ExStart due to 2WayRcvd (event reason: neighbor detected this router)
+Jul 22 16:17:05.728078 task_job_create_background: create prio 4 job Interface event for task OSPF
+Jul 22 16:17:05.728118 OSPF Interface event job created at restart phase 0.
+Jul 22 16:17:05.728214 1400 Max dbd packet
+Jul 22 16:17:05.728262 OSPF restart signaling: Send DBD with LR bit on to nbr ip=192.168.0.1 id=2.2.2.2.
+Jul 22 16:17:05.728321 task_timer_uset: timer OSPF_Global xmit timer <Touched> set to interval 0.040000 jitter 10 at 16:17:05
+Jul 22 16:17:05.728362 task_timer_expire_immediately: timer OSPF_Global xmit timer set to expire now
+Jul 22 16:17:05.728448 OSPF sent DbD 192.168.0.0 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:05.728694   Version 2, length 32, ID 1.1.1.1, area 0.0.0.0
+Jul 22 16:17:05.728736   options 0x52, i 1, m 1, ms 1, r 0, seq 0x10c1ca2, mtu 1500
+Jul 22 16:17:05.728776 OSPF restart signaling: Add LLS data for DbD packet on interface ge-0/0/0.0.
+Jul 22 16:17:05.728838 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:45
+Jul 22 16:17:05.728882 task_timer_ucreate: created timer OSPF_DBD rexmit  flags <>
+Jul 22 16:17:05.728924 task_timer_reset: reset OSPF_DBD rexmit
+Jul 22 16:17:05.728965 task_timer_set_oneshot_latest: timer OSPF_DBD rexmit interval set to 4.831031
+Jul 22 16:17:05.729260 background dispatch running job Interface event for task OSPF
+Jul 22 16:17:05.729372 Interface ge-0/0/0.0 area 0.0.0.0 event NeighborChange
+Jul 22 16:17:05.729413 task_job_create_background: create prio 1 job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.729452 OSPF Interface event job processed 1 events.
+Jul 22 16:17:05.729491 OSPF Interface event job deleted.
+Jul 22 16:17:05.729530 task_job_delete: delete background job Interface event for task OSPF
+Jul 22 16:17:05.729570 background dispatch completed job Interface event for task OSPF
+Jul 22 16:17:05.729864 background dispatch running job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.729905 OSPF restart signaling: set L bit in hellos sent on interface ge-0/0/0.0.
+Jul 22 16:17:05.729946 OSPF sent Hello 192.168.0.0 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:05.729985   Version 2, length 48, ID 1.1.1.1, area 0.0.0.0
+Jul 22 16:17:05.730025   mask 255.255.255.254, hello_ivl 10, opts 0x12, prio 128
+Jul 22 16:17:05.730064   dead_ivl 40, DR 0.0.0.0, BDR 0.0.0.0
+Jul 22 16:17:05.730103   neighbor 2.2.2.2
+Jul 22 16:17:05.730143 OSPF restart signaling: Add LLS data for Hello packet on interface ge-0/0/0.0.
+Jul 22 16:17:05.731495 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:45
+Jul 22 16:17:05.731540 task_job_delete: delete background job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.731722 background dispatch completed job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.732016 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.732443 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.732495 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:05
+Jul 22 16:17:05.732535 OSPF hello from 2.2.2.2 (IFL 70, area 0.0.0.0) absorbed
+Jul 22 16:17:05.732896 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.733223 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.733273 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:05
+Jul 22 16:17:05.733316 OSPF rcvd DbD 192.168.0.1 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:05.733355   Version 2, length 32, ID 2.2.2.2, area 0.0.0.0
+Jul 22 16:17:05.733395   checksum 0x0, authtype 0
+Jul 22 16:17:05.733434   options 0x52, i 1, m 1, ms 1, r 0, seq 0x206af6b, mtu 1500
+Jul 22 16:17:05.733476 task_job_create_background: create prio 1 job OSPF process rcvd dbd packets for task OSPF
+Jul 22 16:17:05.733789 background dispatch running job OSPF process rcvd dbd packets for task OSPF
+Jul 22 16:17:05.733865 ospf_process_dbd: processing dbd from 192.168.0.1
+Jul 22 16:17:05.733905 OSPF restart signaling: Received DBD with LLS data from nbr ip=192.168.0.1 id=2.2.2.2.
+Jul 22 16:17:05.733945 OSPF now slave for nbr 192.168.0.1
+Jul 22 16:17:05.733984 OSPF restart signaling: Received DBD with LR bit on from nbr ip=192.168.0.1 id=2.2.2.2. Save its oob-resync capability 1
+Jul 22 16:17:05.734027 OSPF neighbor 192.168.0.1 (ge-0/0/0.0 area 0.0.0.0) state changed from ExStart to Exchange due to NegotiationDone (event reason: master/slave negotiation completed) (nbr helped: 0)
+Jul 22 16:17:05.734068   In sequence
+Jul 22 16:17:05.734225 task_timer_reset: reset OSPF_DBD rexmit
+Jul 22 16:17:05.734265 1400 Max dbd packet
+Jul 22 16:17:05.734305 1400 Max dbd packet
+Jul 22 16:17:05.734349 OSPF restart signaling: Send DBD with LR bit on to nbr ip=192.168.0.1 id=2.2.2.2.
+Jul 22 16:17:05.734429 task_job_delete: delete background job OSPF process rcvd dbd packets for task OSPF
+Jul 22 16:17:05.734472 background dispatch completed job OSPF process rcvd dbd packets for task OSPF
+Jul 22 16:17:05.735969 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.736301 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.736356 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:05
+Jul 22 16:17:05.736397 OSPF programmed periodic xmit from 192.168.0.0 to 224.0.0.5 (IFL 70, area 0.0.0.0, ID 0.0.0.0, rtbl idx 0) interval 10 0
+Jul 22 16:17:05.776239 OSPF sent DbD 192.168.0.0 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:05.776296   Version 2, length 52, ID 1.1.1.1, area 0.0.0.0
+Jul 22 16:17:05.776337   options 0x52, i 0, m 0, ms 0, r 0, seq 0x206af6b, mtu 1500
+Jul 22 16:17:05.776391   id 1.1.1.1, type Router (0x1), age 0x1
+Jul 22 16:17:05.776431   options 0x22
+Jul 22 16:17:05.776470   adv rtr 1.1.1.1, seq 0x80000001, cksum 0x2b96, len 36
+Jul 22 16:17:05.776511 OSPF restart signaling: Add LLS data for DbD packet on interface ge-0/0/0.0.
+Jul 22 16:17:05.776591 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:45
+Jul 22 16:17:05.776646 task_timer_reset: reset OSPF_DBD rexmit
+Jul 22 16:17:05.776688 task_timer_set_oneshot_latest: timer OSPF_DBD rexmit interval set to 4.902795
+Jul 22 16:17:05.797804 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.798142 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.798206 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:05
+Jul 22 16:17:05.798456 OSPF rcvd DbD 192.168.0.1 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:05.798507   Version 2, length 52, ID 2.2.2.2, area 0.0.0.0
+Jul 22 16:17:05.798548   checksum 0x0, authtype 0
+Jul 22 16:17:05.798588   options 0x52, i 0, m 0, ms 1, r 0, seq 0x206af6c, mtu 1500
+Jul 22 16:17:05.798629   id 2.2.2.2, type Router (0x1), age 0x0
+Jul 22 16:17:05.798669   options 0x22
+Jul 22 16:17:05.798707   adv rtr 2.2.2.2, seq 0x80000001, cksum 0xdeda, len 36
+Jul 22 16:17:05.798753 task_job_create_background: create prio 1 job OSPF process rcvd dbd packets for task OSPF
+Jul 22 16:17:05.799044 background dispatch running job OSPF process rcvd dbd packets for task OSPF
+Jul 22 16:17:05.799119 ospf_process_dbd: processing dbd from 192.168.0.1
+Jul 22 16:17:05.799159 OSPF restart signaling: Received DBD with LLS data from nbr ip=192.168.0.1 id=2.2.2.2.
+Jul 22 16:17:05.799199   In sequence
+Jul 22 16:17:05.799241 task_timer_ucreate: created timer OSPF_LSA age  flags <>
+Jul 22 16:17:05.799282   Not in database
+Jul 22 16:17:05.799324 task_timer_reset: reset OSPF_LSA age
+Jul 22 16:17:05.799365 task_timer_set_oneshot_latest: timer OSPF_LSA age interval set to 10
+Jul 22 16:17:05.799419   Database copy is older
+Jul 22 16:17:05.799461 task_timer_reset: reset OSPF_DBD rexmit
+Jul 22 16:17:05.799511 1400 Max dbd packet
+Jul 22 16:17:05.799551 1400 Max dbd packet
+Jul 22 16:17:05.799591 OSPF restart signaling: Send DBD with LR bit on to nbr ip=192.168.0.1 id=2.2.2.2.
+Jul 22 16:17:05.799633 OSPF neighbor 192.168.0.1 (ge-0/0/0.0 area 0.0.0.0) state changed from Exchange to Loading due to ExchangeDone (event reason: DBD exchange of slave completed) (nbr helped: 0)
+Jul 22 16:17:05.799675 task_timer_ucreate: created timer OSPF_DBD cleanup  flags <>
+Jul 22 16:17:05.799715 task_timer_reset: reset OSPF_DBD cleanup
+Jul 22 16:17:05.799755 task_timer_set_oneshot_latest: timer OSPF_DBD cleanup interval set to 40
+Jul 22 16:17:05.799832 task_job_delete: delete background job OSPF process rcvd dbd packets for task OSPF
+Jul 22 16:17:05.800060 background dispatch completed job OSPF process rcvd dbd packets for task OSPF
+Jul 22 16:17:05.800967 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.801307 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.801362 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:05
+Jul 22 16:17:05.801405 OSPF rcvd LSReq 192.168.0.1 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:05.801444   Version 2, length 36, ID 2.2.2.2, area 0.0.0.0
+Jul 22 16:17:05.801493   checksum 0x0, authtype 0
+Jul 22 16:17:05.801534   type Router (1), id 1.1.1.1, adv rtr 1.1.1.1
+Jul 22 16:17:05.801576 task_job_create_background: create prio 1 job OSPF process rcvd LS request packets for task OSPF
+Jul 22 16:17:05.801873 background dispatch running job OSPF process rcvd LS request packets for task OSPF
+Jul 22 16:17:05.801999 task_job_delete: delete background job OSPF process rcvd LS request packets for task OSPF
+Jul 22 16:17:05.802042 background dispatch completed job OSPF process rcvd LS request packets for task OSPF
+Jul 22 16:17:05.821635 OSPF sent DbD 192.168.0.0 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:05.821695   Version 2, length 32, ID 1.1.1.1, area 0.0.0.0
+Jul 22 16:17:05.821755   options 0x52, i 0, m 0, ms 0, r 0, seq 0x206af6c, mtu 1500
+Jul 22 16:17:05.821797 OSPF restart signaling: Add LLS data for DbD packet on interface ge-0/0/0.0.
+Jul 22 16:17:05.821867 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:45
+Jul 22 16:17:05.821916 task_timer_reset: reset OSPF_DBD rexmit
+Jul 22 16:17:05.821959 task_timer_set_oneshot_latest: timer OSPF_DBD rexmit interval set to 3.968202
+Jul 22 16:17:05.822003 OSPF sent LSReq 192.168.0.0 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:05.822043   Version 2, length 36, ID 1.1.1.1, area 0.0.0.0
+Jul 22 16:17:05.822084   type Router (1), id 2.2.2.2, adv rtr 2.2.2.2
+Jul 22 16:17:05.822134 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:45
+Jul 22 16:17:05.822361 task_timer_ucreate: created timer OSPF_LSREQ rexmit  flags <>
+Jul 22 16:17:05.822403 task_timer_reset: reset OSPF_LSREQ rexmit
+Jul 22 16:17:05.822478 task_timer_uset_interval_latest: timer OSPF_LSREQ rexmit interval set to 3.968203
+Jul 22 16:17:05.822522 OSPF LSA Router 1.1.1.1 1.1.1.1 FLOODED on ge-0/0/0.0 area 0.0.0.0
+Jul 22 16:17:05.822565 OSPF sent LSUpdate 192.168.0.0 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:05.822605   Version 2, length 64, ID 1.1.1.1, area 0.0.0.0
+Jul 22 16:17:05.822665   adv count 1
+Jul 22 16:17:05.822706   id 1.1.1.1, type Router (0x1), age 0x2
+Jul 22 16:17:05.822745   options 0x22
+Jul 22 16:17:05.822785   adv rtr 1.1.1.1, seq 0x80000001, cksum 0x2b96, len 36
+Jul 22 16:17:05.822836     bits 0x0, link count 1
+Jul 22 16:17:05.822877     id 192.168.0.0, data 255.255.255.254, type Stub (3)
+Jul 22 16:17:05.822916     Topology count 0, Default metric 1
+Jul 22 16:17:05.822968 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:45
+Jul 22 16:17:05.846920 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.847263 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:05.847326 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:05
+Jul 22 16:17:05.847393 OSPF rcvd LSUpdate 192.168.0.1 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:05.847434   Version 2, length 64, ID 2.2.2.2, area 0.0.0.0
+Jul 22 16:17:05.847474   checksum 0x0, authtype 0
+Jul 22 16:17:05.847514   adv count 1
+Jul 22 16:17:05.847554   id 2.2.2.2, type Router (0x1), age 0x1
+Jul 22 16:17:05.847594   options 0x22
+Jul 22 16:17:05.847633   adv rtr 2.2.2.2, seq 0x80000001, cksum 0xdeda, len 36
+Jul 22 16:17:05.847673     bits 0x0, link count 1
+Jul 22 16:17:05.847713     id 192.168.0.0, data 255.255.255.254, type Stub (3)
+Jul 22 16:17:05.847752     Topology count 0, Default metric 1
+Jul 22 16:17:05.847966 task_job_create_background: create prio 1 job OSPF process rcvd LS update packets for task OSPF
+Jul 22 16:17:05.848263 background dispatch running job OSPF process rcvd LS update packets for task OSPF
+Jul 22 16:17:05.848365 OSPF LSA Router 2.2.2.2 2.2.2.2 from 192.168.0.1 newer than db
+Jul 22 16:17:05.848410 Clear inverse links started for area 0.0.0.0 Router lsa id 2.2.2.2 adv rtr 2.2.2.2
+Jul 22 16:17:05.848451 Clear inverse links finished for area 0.0.0.0 Router lsa id 2.2.2.2 adv rtr 2.2.2.2
+Jul 22 16:17:05.848494 LSA Router 2.2.2.2 2.2.2.2 flood state Idle -> Idle, new LSA
+Jul 22 16:17:05.848535 ospf_set_lsdb_state: Router LSA 2.2.2.2 adv-rtr 2.2.2.2 state QUIET->QUIET
+Jul 22 16:17:05.848590 task_timer_reset: reset OSPF_LSA age
+Jul 22 16:17:05.848632 task_timer_set_oneshot_latest: timer OSPF_LSA age interval set to 59:59
+Jul 22 16:17:05.848677 LSA analysis started for area 0.0.0.0 Router lsa id 2.2.2.2 adv rtr 2.2.2.2
+Jul 22 16:17:05.848717 LSA analysis finished for area 0.0.0.0 Router lsa id 2.2.2.2 adv rtr 2.2.2.2
+Jul 22 16:17:05.848758 Setup inverse links started for area 0.0.0.0 Router lsa id 2.2.2.2 adv rtr 2.2.2.2
+Jul 22 16:17:05.848798 Setup inverse links finished for area 0.0.0.0 Router lsa id 2.2.2.2 adv rtr 2.2.2.2
+Jul 22 16:17:05.848839 OSPF LSA Router 2.2.2.2 2.2.2.2 from 192.168.0.1, LSA changed from its last instance
+Jul 22 16:17:05.848880 OSPF LSREQ for LSA Router 2.2.2.2 2.2.2.2 satisfied for nbr 192.168.0.1 on ge-0/0/0.0 area 0.0.0.0
+Jul 22 16:17:05.848921 LSA Router 2.2.2.2 2.2.2.2 flood state Idle -> Standby send, flooding
+Jul 22 16:17:05.848961 Updating LSA Router 2.2.2.2 2.2.2.2 (flood state Standby send)
+Jul 22 16:17:05.849003 LSA Router 2.2.2.2 2.2.2.2 flood state Standby send -> Wait nbr ack, not queued
+Jul 22 16:17:05.849043 OSPF flooding restarted, depth 1, rexmit 0
+Jul 22 16:17:05.849083 task_job_create_background: create prio 3 job OSPF flood for task OSPF
+Jul 22 16:17:05.849133 OSPF LSA Router 2.2.2.2 2.2.2.2 newer, delayed ack
+Jul 22 16:17:05.849352 task_timer_reset: reset OSPF_Intf Ack
+Jul 22 16:17:05.849405 task_timer_set_oneshot_latest: timer OSPF_Intf Ack interval set to 1
+Jul 22 16:17:05.849484 task_job_delete: delete background job OSPF process rcvd LS update packets for task OSPF
+Jul 22 16:17:05.849524 background dispatch completed job OSPF process rcvd LS update packets for task OSPF
+Jul 22 16:17:05.849797 background dispatch running job OSPF flood for task OSPF
+Jul 22 16:17:05.849838 task_timer_reset: reset OSPF_Flood timer
+Jul 22 16:17:05.849878   Removed from LSREQ list
+Jul 22 16:17:05.849922 OSPF neighbor 192.168.0.1 (ge-0/0/0.0 area 0.0.0.0) state changed from Loading to Full due to LoadDone (event reason: OSPF loading completed) (nbr helped: 0)
+Jul 22 16:17:05.850026 RPD_OSPF_NBRUP: OSPF neighbor 192.168.0.1 (realm ospf-v2 ge-0/0/0.0 area 0.0.0.0) state changed from Loading to Full due to LoadDone (event reason: OSPF loading completed)
+Jul 22 16:17:05.850068 task_timer_delete: OSPF_LSREQ rexmit <Latest Touched>
+Jul 22 16:17:05.851160 ospf_set_lsdb_state: Router LSA 1.1.1.1 adv-rtr 1.1.1.1 state QUIET->GEN_PENDING
+Jul 22 16:17:05.851204 task_timer_reset: reset OSPF_LSA gen
+Jul 22 16:17:05.851254 task_timer_uset: timer OSPF_LSA gen <Touched> set to offset 4 at 16:17:09
+Jul 22 16:17:05.851295 OSPF trigger router LSA 0x9408000 build for area 0.0.0.0 lsa-id 1.1.1.1
+Jul 22 16:17:05.851335 ospf_trigger_build_telink_lsas : No peer found
+Jul 22 16:17:05.851391 OSPF LSA Router 2.2.2.2 2.2.2.2 same as ge-0/0/0.0 area 0.0.0.0 192.168.0.1 LSREQ
+Jul 22 16:17:05.851431 OSPF LSA Router 2.2.2.2 2.2.2.2 on no ge-0/0/0.0 area 0.0.0.0 rexmit lists, no flood
+Jul 22 16:17:05.851472 LSA Router 2.2.2.2 2.2.2.2 flood state Wait nbr ack -> Idle, not queued
+Jul 22 16:17:05.851512 task_job_delete: delete background job OSPF flood for task OSPF
+Jul 22 16:17:05.851557 background dispatch completed job OSPF flood for task OSPF
+Jul 22 16:17:05.865959 task_timer_reset: reset OSPF_Global xmit timer
+Jul 22 16:17:06.856713 task_timer_uset: timer OSPF_Global xmit timer <Touched> set to interval 0.040000 jitter 10 at 16:17:05
+Jul 22 16:17:06.856999 task_timer_expire_immediately: timer OSPF_Global xmit timer set to expire now
+Jul 22 16:17:06.857091 OSPF sent LSAck 192.168.0.0 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:06.857132   Version 2, length 44, ID 1.1.1.1, area 0.0.0.0
+Jul 22 16:17:06.857172   id 2.2.2.2, type Router (0x1), age 0x1
+Jul 22 16:17:06.857212   options 0x22
+Jul 22 16:17:06.857251   adv rtr 2.2.2.2, seq 0x80000001, cksum 0xdeda, len 36
+Jul 22 16:17:06.857305 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:46
+Jul 22 16:17:06.858428 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:06.858775 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:06.858828 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:06
+Jul 22 16:17:06.858873 OSPF rcvd LSAck 192.168.0.1 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:06.858913   Version 2, length 44, ID 2.2.2.2, area 0.0.0.0
+Jul 22 16:17:06.858953   checksum 0x0, authtype 0
+Jul 22 16:17:06.858992   id 1.1.1.1, type Router (0x1), age 0x2
+Jul 22 16:17:06.859032   options 0x22
+Jul 22 16:17:06.859071   adv rtr 1.1.1.1, seq 0x80000001, cksum 0x2b96, len 36
+Jul 22 16:17:06.859114 task_job_create_background: create prio 1 job OSPF process rcvd LS ack packets for task OSPF
+Jul 22 16:17:06.859428 background dispatch running job OSPF process rcvd LS ack packets for task OSPF
+Jul 22 16:17:06.859507 OSPF ACK Router 1.1.1.1 1.1.1.1 from 192.168.0.1 no rexmit
+Jul 22 16:17:06.859598 task_job_delete: delete background job OSPF process rcvd LS ack packets for task OSPF
+Jul 22 16:17:06.859643 background dispatch completed job OSPF process rcvd LS ack packets for task OSPF
+Jul 22 16:17:06.901650 task_timer_reset: reset OSPF_Global xmit timer
+Jul 22 16:17:08.971753 task_job_create_background: create prio 2 job Route recalc timer for task OSPF
+Jul 22 16:17:08.972243 background dispatch running job Route recalc timer for task OSPF
+Jul 22 16:17:08.972321 Starting full SPF for topology default
+Jul 22 16:17:08.972399 SPF starting for area 0.0.0.0
+Jul 22 16:17:08.972441   OSPF add LSA Router (1.1.1.1, 1.1.1.1) distance 0 to SPF list
+Jul 22 16:17:08.972501 SPF finished for area 0.0.0.0
+Jul 22 16:17:08.972586  SPF elapsed time 0.000187s
+Jul 22 16:17:08.972662 SPF add stubs starting for area 0.0.0.0
+Jul 22 16:17:08.972715     IP Nexthop #1 (null):1.1.1.1 (ge-0/0/0.0) added
+Jul 22 16:17:08.972777   Adding stub route 192.168.0.0/31
+Jul 22 16:17:08.972830     IP Route added with cost 1
+Jul 22 16:17:08.972871 SPF add stubs finished for area 0.0.0.0
+Jul 22 16:17:08.972947  Stub elapsed time 0.000285s
+Jul 22 16:17:08.973023 SPF add inter area starting for area 0.0.0.0
+Jul 22 16:17:08.973062 SPF add inter area Summary starting for area 0.0.0.0
+Jul 22 16:17:08.973137 SPF add inter area Summary finished for area 0.0.0.0
+Jul 22 16:17:08.973178 SPF add inter area ASBRSum starting for area 0.0.0.0
+Jul 22 16:17:08.973217 SPF add inter area ASBRSum finished for area 0.0.0.0
+Jul 22 16:17:08.973256 SPF add inter area finished for area 0.0.0.0
+Jul 22 16:17:08.973332  Interarea elapsed time 0.000309s
+Jul 22 16:17:08.973407 SPF add external starting
+Jul 22 16:17:08.973856 SPF add external finished
+Jul 22 16:17:08.973936  External elapsed time 0.000528s
+Jul 22 16:17:08.974011 SPF add NSSA starting
+Jul 22 16:17:08.974050 SPF add NSSA finished
+Jul 22 16:17:08.974148  NSSA elapsed time 0.000128s
+Jul 22 16:17:08.974225 SPF post spf cleanup starting
+Jul 22 16:17:08.974290   Route 192.168.0.0/31 has changed (other)
+Jul 22 16:17:08.974345   Considering autosummary for 192.168.0.0/31, summary possible=1
+Jul 22 16:17:08.974387   Considering NSSA autosummary for 192.168.0.0/31, summary not possible
+Jul 22 16:17:08.974427 SPF post spf cleanup finished
+Jul 22 16:17:08.974503  Cleanup elapsed time 0.000278s
+Jul 22 16:17:08.974617    Total elapsed time 0.002294s
+Jul 22 16:17:08.974656 Finished full SPF for topology default
+Jul 22 16:17:08.974861 task_job_delete: delete background job Route recalc timer for task OSPF
+Jul 22 16:17:08.974908 background dispatch completed job Route recalc timer for task OSPF
+Jul 22 16:17:09.856284 Clear inverse links started for area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:09.856376 Clear inverse links finished for area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:09.856417 ospf_set_lsdb_state: Router LSA 1.1.1.1 adv-rtr 1.1.1.1 state GEN_PENDING->QUIET
+Jul 22 16:17:09.856463 task_timer_reset: reset OSPF_LSA gen
+Jul 22 16:17:09.856513 task_timer_uset: timer OSPF_LSA gen <Touched Processing> set to offset 50:00 at 17:07:09
+Jul 22 16:17:09.856558 OSPF built router LSA, area 0.0.0.0, link count 2
+Jul 22 16:17:09.856600 LSA Router 1.1.1.1 1.1.1.1 flood state Idle -> Idle, new LSA
+Jul 22 16:17:09.856642 task_timer_reset: reset OSPF_LSA age
+Jul 22 16:17:09.856682 task_timer_set_oneshot_latest: timer OSPF_LSA age interval set to 1:00:00
+Jul 22 16:17:09.856737 LSA analysis started for area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:09.856814   Started processing for link type PointToPoint link-id 2.2.2.2
+Jul 22 16:17:09.856867     Added entry for topology id 0
+Jul 22 16:17:09.856920     Added link type PointToPoint link-id 2.2.2.2 metric 1
+Jul 22 16:17:09.856960   Finished processing for link type PointToPoint link-id 2.2.2.2
+Jul 22 16:17:09.857000 LSA analysis finished for area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:09.857040 Setup inverse links started for area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:09.857079   Started processing entry for topology id 0
+Jul 22 16:17:09.857118     Hooking link type PointToPoint link-id 2.2.2.2
+Jul 22 16:17:09.857158     Not connected to any inverse link
+Jul 22 16:17:09.857198   Finished processing entry for topology id 0
+Jul 22 16:17:09.857237 Setup inverse links finished for area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:09.857277 OSPF full SPF scheduled for topology default
+Jul 22 16:17:09.862747 OSPF SPF scheduled for topology default in 4.111837s
+Jul 22 16:17:09.862814 task_timer_uset: timer OSPF_Route recalc timer <Touched SpawnJob> set to offset 4.111837 at 16:17:13
+Jul 22 16:17:09.862856 LSA Router 1.1.1.1 1.1.1.1 flood state Idle -> Standby send, flooding
+Jul 22 16:17:09.862897 Updating LSA Router 1.1.1.1 1.1.1.1 (flood state Standby send)
+Jul 22 16:17:09.862942 LSA Router 1.1.1.1 1.1.1.1 flood state Standby send -> Wait nbr ack, not queued
+Jul 22 16:17:09.862982 OSPF flooding restarted, depth 1, rexmit 0
+Jul 22 16:17:09.863024 task_job_create_background: create prio 3 job OSPF flood for task OSPF
+Jul 22 16:17:09.863320 background dispatch running job OSPF flood for task OSPF
+Jul 22 16:17:09.863361 task_timer_reset: reset OSPF_Flood timer
+Jul 22 16:17:09.863406 task_timer_reset: reset OSPF_Neighbor rexmit
+Jul 22 16:17:09.863447 task_timer_set_oneshot_latest: timer OSPF_Neighbor rexmit interval set to 5
+Jul 22 16:17:09.863488 OSPF LSA Router 1.1.1.1 1.1.1.1 flooding on ge-0/0/0.0 area 0.0.0.0: NORMAL prio
+Jul 22 16:17:09.863534 task_timer_reset: reset OSPF_Intf Flood
+Jul 22 16:17:09.863575 task_timer_set_oneshot_latest: timer OSPF_Intf Flood interval set to 2
+Jul 22 16:17:09.863616 task_job_delete: delete background job OSPF flood for task OSPF
+Jul 22 16:17:09.863662 background dispatch completed job OSPF flood for task OSPF
+Jul 22 16:17:11.872475 task_timer_reset: reset OSPF_Intf Flood
+Jul 22 16:17:11.872572 task_timer_uset: timer OSPF_Global xmit timer <Touched> set to interval 0.040000 jitter 10 at 16:17:11
+Jul 22 16:17:11.872615 task_timer_expire_immediately: timer OSPF_Global xmit timer set to expire now
+Jul 22 16:17:11.872696 OSPF LSA Router 1.1.1.1 1.1.1.1 FLOODED on ge-0/0/0.0 area 0.0.0.0
+Jul 22 16:17:11.872742 OSPF sent LSUpdate 192.168.0.0 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:11.872781   Version 2, length 76, ID 1.1.1.1, area 0.0.0.0
+Jul 22 16:17:11.872820   adv count 1
+Jul 22 16:17:11.872862   id 1.1.1.1, type Router (0x1), age 0x4
+Jul 22 16:17:11.873080   options 0x22
+Jul 22 16:17:11.873121   adv rtr 1.1.1.1, seq 0x80000002, cksum 0xf14e, len 48
+Jul 22 16:17:11.873160     bits 0x0, link count 2
+Jul 22 16:17:11.873200     id 2.2.2.2, data 192.168.0.0, type PointToPoint (1)
+Jul 22 16:17:11.873239     Topology count 0, Default metric 1
+Jul 22 16:17:11.873289     id 192.168.0.0, data 255.255.255.254, type Stub (3)
+Jul 22 16:17:11.873329     Topology count 0, Default metric 1
+Jul 22 16:17:11.873383 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:51
+Jul 22 16:17:11.916763 task_timer_reset: reset OSPF_Global xmit timer
+Jul 22 16:17:12.877458 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:12.877866 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:12.877920 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:12
+Jul 22 16:17:12.877968 OSPF rcvd LSUpdate 192.168.0.1 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:12.878007   Version 2, length 76, ID 2.2.2.2, area 0.0.0.0
+Jul 22 16:17:12.878047   checksum 0x0, authtype 0
+Jul 22 16:17:12.878086   adv count 1
+Jul 22 16:17:12.878126   id 2.2.2.2, type Router (0x1), age 0x3
+Jul 22 16:17:12.878165   options 0x22
+Jul 22 16:17:12.878205   adv rtr 2.2.2.2, seq 0x80000002, cksum 0x91a9, len 48
+Jul 22 16:17:12.878244     bits 0x0, link count 2
+Jul 22 16:17:12.878284     id 1.1.1.1, data 192.168.0.1, type PointToPoint (1)
+Jul 22 16:17:12.878336     Topology count 0, Default metric 1
+Jul 22 16:17:12.878377     id 192.168.0.0, data 255.255.255.254, type Stub (3)
+Jul 22 16:17:12.878416     Topology count 0, Default metric 1
+Jul 22 16:17:12.878460 task_job_create_background: create prio 1 job OSPF process rcvd LS update packets for task OSPF
+Jul 22 16:17:12.878753 background dispatch running job OSPF process rcvd LS update packets for task OSPF
+Jul 22 16:17:12.878832 OSPF LSA Router 2.2.2.2 2.2.2.2 from 192.168.0.1 newer than db
+Jul 22 16:17:12.880570 Clear inverse links started for area 0.0.0.0 Router lsa id 2.2.2.2 adv rtr 2.2.2.2
+Jul 22 16:17:12.880995 Clear inverse links finished for area 0.0.0.0 Router lsa id 2.2.2.2 adv rtr 2.2.2.2
+Jul 22 16:17:12.881039 LSA Router 2.2.2.2 2.2.2.2 flood state Idle -> Idle, new LSA
+Jul 22 16:17:12.881083 ospf_set_lsdb_state: Router LSA 2.2.2.2 adv-rtr 2.2.2.2 state QUIET->QUIET
+Jul 22 16:17:12.881128 task_timer_reset: reset OSPF_LSA age
+Jul 22 16:17:12.881170 task_timer_set_oneshot_latest: timer OSPF_LSA age interval set to 59:57
+Jul 22 16:17:12.881211 LSA analysis started for area 0.0.0.0 Router lsa id 2.2.2.2 adv rtr 2.2.2.2
+Jul 22 16:17:12.881252   Started processing for link type PointToPoint link-id 1.1.1.1
+Jul 22 16:17:12.881294     Added entry for topology id 0
+Jul 22 16:17:12.881345     Added link type PointToPoint link-id 1.1.1.1 metric 1
+Jul 22 16:17:12.881385   Finished processing for link type PointToPoint link-id 1.1.1.1
+Jul 22 16:17:12.881425 LSA analysis finished for area 0.0.0.0 Router lsa id 2.2.2.2 adv rtr 2.2.2.2
+Jul 22 16:17:12.881465 Setup inverse links started for area 0.0.0.0 Router lsa id 2.2.2.2 adv rtr 2.2.2.2
+Jul 22 16:17:12.881505   Started processing entry for topology id 0
+Jul 22 16:17:12.881544     Hooking link type PointToPoint link-id 1.1.1.1
+Jul 22 16:17:12.881593     Connected to link type PointToPoint link-id 2.2.2.2 in area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:12.881634   Finished processing entry for topology id 0
+Jul 22 16:17:12.881674 Setup inverse links finished for area 0.0.0.0 Router lsa id 2.2.2.2 adv rtr 2.2.2.2
+Jul 22 16:17:12.881714 OSPF LSA Router 2.2.2.2 2.2.2.2 from 192.168.0.1, LSA changed from its last instance
+Jul 22 16:17:12.881757 LSA Router 2.2.2.2 2.2.2.2 flood state Idle -> Standby send, flooding
+Jul 22 16:17:12.881797 Updating LSA Router 2.2.2.2 2.2.2.2 (flood state Standby send)
+Jul 22 16:17:12.881838 LSA Router 2.2.2.2 2.2.2.2 flood state Standby send -> Wait nbr ack, not queued
+Jul 22 16:17:12.881878 OSPF flooding restarted, depth 1, rexmit 1
+Jul 22 16:17:12.882091 task_job_create_background: create prio 3 job OSPF flood for task OSPF
+Jul 22 16:17:12.882133 OSPF LSA Router 2.2.2.2 2.2.2.2 newer, delayed ack
+Jul 22 16:17:12.882175 task_timer_reset: reset OSPF_Intf Ack
+Jul 22 16:17:12.882216 task_timer_set_oneshot_latest: timer OSPF_Intf Ack interval set to 1
+Jul 22 16:17:12.882294 task_job_delete: delete background job OSPF process rcvd LS update packets for task OSPF
+Jul 22 16:17:12.882345 background dispatch completed job OSPF process rcvd LS update packets for task OSPF
+Jul 22 16:17:12.882601 background dispatch running job OSPF flood for task OSPF
+Jul 22 16:17:12.882641 task_timer_reset: reset OSPF_Flood timer
+Jul 22 16:17:12.882681 OSPF LSA Router 2.2.2.2 2.2.2.2 on no ge-0/0/0.0 area 0.0.0.0 rexmit lists, no flood
+Jul 22 16:17:12.882722 LSA Router 2.2.2.2 2.2.2.2 flood state Wait nbr ack -> Idle, not queued
+Jul 22 16:17:12.882761 task_job_delete: delete background job OSPF flood for task OSPF
+Jul 22 16:17:12.882806 background dispatch completed job OSPF flood for task OSPF
+Jul 22 16:17:12.923041 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:12.923401 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:12.923467 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:12
+Jul 22 16:17:12.923514 OSPF rcvd LSAck 192.168.0.1 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:12.923554   Version 2, length 44, ID 2.2.2.2, area 0.0.0.0
+Jul 22 16:17:12.923594   checksum 0x0, authtype 0
+Jul 22 16:17:12.923634   id 1.1.1.1, type Router (0x1), age 0x4
+Jul 22 16:17:12.923674   options 0x22
+Jul 22 16:17:12.923714   adv rtr 1.1.1.1, seq 0x80000002, cksum 0xf14e, len 48
+Jul 22 16:17:12.923779 task_job_create_background: create prio 1 job OSPF process rcvd LS ack packets for task OSPF
+Jul 22 16:17:12.924082 background dispatch running job OSPF process rcvd LS ack packets for task OSPF
+Jul 22 16:17:12.924162 OSPF ACK Router 1.1.1.1 1.1.1.1 from 192.168.0.1 same instance
+Jul 22 16:17:12.924354 LSA Router 1.1.1.1 1.1.1.1 flood state Wait nbr ack -> Idle, not queued
+Jul 22 16:17:12.924438 task_job_delete: delete background job OSPF process rcvd LS ack packets for task OSPF
+Jul 22 16:17:12.924482 background dispatch completed job OSPF process rcvd LS ack packets for task OSPF
+Jul 22 16:17:13.642071 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:13.642447 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:13.642501 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:13
+Jul 22 16:17:13.642543 OSPF periodic xmit from 192.168.0.0 to 224.0.0.5 (IFL 70 area 0.0.0.0)
+Jul 22 16:17:13.886816 task_timer_uset: timer OSPF_Global xmit timer <Touched> set to interval 0.040000 jitter 10 at 16:17:13
+Jul 22 16:17:13.886865 task_timer_expire_immediately: timer OSPF_Global xmit timer set to expire now
+Jul 22 16:17:13.886955 OSPF sent LSAck 192.168.0.0 -> 224.0.0.5 (ge-0/0/0.0 IFL 70 area 0.0.0.0)
+Jul 22 16:17:13.886995   Version 2, length 44, ID 1.1.1.1, area 0.0.0.0
+Jul 22 16:17:13.887035   id 2.2.2.2, type Router (0x1), age 0x3
+Jul 22 16:17:13.887073   options 0x22
+Jul 22 16:17:13.887111   adv rtr 2.2.2.2, seq 0x80000002, cksum 0x91a9, len 48
+Jul 22 16:17:13.887208 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched> set to offset 40 at 16:17:53
+Jul 22 16:17:13.931777 task_timer_reset: reset OSPF_Global xmit timer
+Jul 22 16:17:13.981929 task_job_create_background: create prio 2 job Route recalc timer for task OSPF
+Jul 22 16:17:13.982280 background dispatch running job Route recalc timer for task OSPF
+Jul 22 16:17:13.982372 Starting full SPF for topology default
+Jul 22 16:17:13.982473 SPF starting for area 0.0.0.0
+Jul 22 16:17:13.982522   OSPF add LSA Router (1.1.1.1, 1.1.1.1) distance 0 to SPF list
+Jul 22 16:17:13.982569   Considering router link PointToPoint 2.2.2.2 192.168.0.0
+Jul 22 16:17:13.982634    Doing bidirectional check
+Jul 22 16:17:13.982854     Examining router link 1.1.1.1
+Jul 22 16:17:13.982901     Back link found
+Jul 22 16:17:13.982992    Added to candidate list at distance 1
+Jul 22 16:17:13.983054    Inheriting parent's usable next hops
+Jul 22 16:17:13.983100    No nexthops, parent is root
+Jul 22 16:17:13.983145    Router LSA, adding P2P nexthop
+Jul 22 16:17:13.983191    LAN-P2P interface, adding nexthop address
+Jul 22 16:17:13.983240     IP Nexthop #1 192.168.0.1:2.2.2.2 (ge-0/0/0.0) added
+Jul 22 16:17:13.983286     IP Nexthop #1 192.168.0.1:2.2.2.2 (ge-0/0/0.0) added
+Jul 22 16:17:13.983336   OSPF add LSA Router (2.2.2.2, 2.2.2.2) distance 1 to SPF list
+Jul 22 16:17:13.983381    IP nexthop ge-0/0/0.0 192.168.0.1 area 0.0.0.0
+Jul 22 16:17:13.983427   Adding SPF route 2.2.2.2
+Jul 22 16:17:13.983475     IP Route added with cost 1 (fresh)
+Jul 22 16:17:13.983521   Considering router link PointToPoint 1.1.1.1 192.168.0.1
+Jul 22 16:17:13.983567    Already on SPF list
+Jul 22 16:17:13.983613 SPF finished for area 0.0.0.0
+Jul 22 16:17:13.983704  SPF elapsed time 0.001231s
+Jul 22 16:17:13.983791 SPF add stubs starting for area 0.0.0.0
+Jul 22 16:17:13.983838     IP Nexthop #1 (null):1.1.1.1 (ge-0/0/0.0) added
+Jul 22 16:17:13.983885   Adding stub route 192.168.0.0/31
+Jul 22 16:17:13.983949     IP Route added with cost 1
+Jul 22 16:17:13.983995   Adding stub route 192.168.0.0/31
+Jul 22 16:17:13.984041     Better route found
+Jul 22 16:17:13.984087 SPF add stubs finished for area 0.0.0.0
+Jul 22 16:17:13.984174  Stub elapsed time 0.000383s
+Jul 22 16:17:13.984262 SPF add inter area starting for area 0.0.0.0
+Jul 22 16:17:13.984308 SPF add inter area Summary starting for area 0.0.0.0
+Jul 22 16:17:13.984353 SPF add inter area Summary finished for area 0.0.0.0
+Jul 22 16:17:13.984398 SPF add inter area ASBRSum starting for area 0.0.0.0
+Jul 22 16:17:13.984444 SPF add inter area ASBRSum finished for area 0.0.0.0
+Jul 22 16:17:13.984489 SPF add inter area finished for area 0.0.0.0
+Jul 22 16:17:13.984576  Interarea elapsed time 0.000313s
+Jul 22 16:17:13.984839 SPF add external starting
+Jul 22 16:17:13.984896 SPF add external finished
+Jul 22 16:17:13.984988  External elapsed time 0.000147s
+Jul 22 16:17:13.985074 SPF add NSSA starting
+Jul 22 16:17:13.985119 SPF add NSSA finished
+Jul 22 16:17:13.985206  NSSA elapsed time 0.000131s
+Jul 22 16:17:13.985293 SPF post spf cleanup starting
+Jul 22 16:17:13.985347   Route 192.168.0.0/31 is unchanged
+Jul 22 16:17:13.985396   Route 2.2.2.2 has changed (attribute)
+Jul 22 16:17:13.985442   Considering autosummary for 2.2.2.2, summary possible=0
+Jul 22 16:17:13.985488    All autosummaries deleted
+Jul 22 16:17:13.986171   Considering NSSA autosummary for 2.2.2.2, summary not possible
+Jul 22 16:17:13.986218 SPF post spf cleanup finished
+Jul 22 16:17:13.986306  Cleanup elapsed time 0.001013s
+Jul 22 16:17:13.986433    Total elapsed time 0.004065s
+Jul 22 16:17:13.986479 Finished full SPF for topology default
+Jul 22 16:17:13.986530 task_job_delete: delete background job Route recalc timer for task OSPF
+Jul 22 16:17:13.986583 background dispatch completed job Route recalc timer for task OSPF
+Jul 22 16:17:14.147553 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:14.147920 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:14.147972 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:14
+Jul 22 16:17:14.148019 OSPF hello from 2.2.2.2 (IFL 70, area 0.0.0.0) absorbed
+Jul 22 16:17:14.872176 task_timer_reset: reset OSPF_Neighbor rexmit
+Jul 22 16:17:21.602415 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:21.602922 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:21.602977 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:21
+Jul 22 16:17:21.603019 OSPF periodic xmit from 192.168.0.0 to 224.0.0.5 (IFL 70 area 0.0.0.0)
+Jul 22 16:17:23.223109 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:23.223674 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:23.223728 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:23
+Jul 22 16:17:23.223774 OSPF hello from 2.2.2.2 (IFL 70, area 0.0.0.0) absorbed
+Jul 22 16:17:29.867878 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:29.868294 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:29.868356 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:29
+Jul 22 16:17:29.868403 OSPF periodic xmit from 192.168.0.0 to 224.0.0.5 (IFL 70 area 0.0.0.0)
+Jul 22 16:17:33.218818 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:33.219208 task_process_events: recv ready for OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:33.219262 task_timer_uset: timer OSPF I/O./var/run/ppmd_control_PPM Hold <Touched> set to offset 2:00 at 16:19:33
+Jul 22 16:17:33.219304 OSPF hello from 2.2.2.2 (IFL 70, area 0.0.0.0) absorbed
+Jul 22 16:17:35.782580 task_job_create_background: create prio 1 job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:35.782699 Delete interface ge-0/0/0.0 area 0.0.0.0
+Jul 22 16:17:35.782743 Interface ge-0/0/0.0 (192.168.0.0) area 0.0.0.0 state changed from PtToPt to Down
+Jul 22 16:17:35.782803 ospf_set_lsdb_state: Router LSA 1.1.1.1 adv-rtr 1.1.1.1 state QUIET->GEN_PENDING
+Jul 22 16:17:35.782848 task_timer_reset: reset OSPF_LSA gen
+Jul 22 16:17:35.782903 task_timer_uset: timer OSPF_LSA gen <Touched> set to offset 0.050000 at 16:17:35
+Jul 22 16:17:35.782945 OSPF trigger router LSA 0x9408000 build for area 0.0.0.0 lsa-id 1.1.1.1
+Jul 22 16:17:35.782986 ospf_trigger_build_telink_lsas : No peer found
+Jul 22 16:17:35.783040 task_timer_uset: timer OSPF_internal timer <Touched> set to offset 5 at 16:17:40
+Jul 22 16:17:35.783174 OSPF neighbor 192.168.0.1 (ge-0/0/0.0 area 0.0.0.0) state changed from Full to Down due to KillNbr (event reason: interface went down) (nbr helped: 0)
+Jul 22 16:17:35.783490 RPD_OSPF_NBRDOWN: OSPF neighbor 192.168.0.1 (realm ospf-v2 ge-0/0/0.0 area 0.0.0.0) state changed from Full to Down due to KillNbr (event reason: interface went down)
+Jul 22 16:17:35.783609 OSPF trigger router LSA 0x9408000 build for area 0.0.0.0 lsa-id 1.1.1.1
+Jul 22 16:17:35.783651 ospf_trigger_build_telink_lsas : No peer found
+Jul 22 16:17:35.783695 task_timer_delete: OSPF_DBD cleanup <Touched>
+Jul 22 16:17:35.783740 task_timer_delete: OSPF_DBD rexmit <>
+Jul 22 16:17:35.783782 OSPF 192.168.0.1 DBD cleanup complete
+Jul 22 16:17:35.783836 task_timer_delete: OSPF_Grace timer <>
+Jul 22 16:17:35.783879 task_timer_delete: OSPF_Neighbor rexmit <Touched>
+Jul 22 16:17:35.783921 task_timer_delete: OSPF_resync timeout <>
+Jul 22 16:17:35.783962 task_timer_delete: OSPF_resync timeout <>
+Jul 22 16:17:35.784004 task_timer_reset: reset OSPF_DR Wait
+Jul 22 16:17:35.784048 task_timer_delete: OSPF_DR Wait <Touched>
+Jul 22 16:17:35.784090 task_timer_delete: OSPF_Intf Ack <>
+Jul 22 16:17:35.784131 task_timer_delete: OSPF_Intf Flood <Touched>
+Jul 22 16:17:35.784201 task_timer_delete: OSPF_LSA gen <Touched>
+Jul 22 16:17:35.784245 task_timer_delete: OSPF_LSA age <Touched>
+Jul 22 16:17:35.784288 LSA unanalysis started for area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:35.784330   Started deleting entry for topology id 0
+Jul 22 16:17:35.784371     Started deleting link type PointToPoint link-id 2.2.2.2
+Jul 22 16:17:35.784412     Disconnected forward link type PointToPoint link-id 2.2.2.2
+Jul 22 16:17:35.784466     Finished deleting link type PointToPoint link-id 2.2.2.2
+Jul 22 16:17:35.784507   Finished deleting entry for topology id 0
+Jul 22 16:17:35.784566 LSA unanalysis finished for area 0.0.0.0 Router lsa id 1.1.1.1 adv rtr 1.1.1.1
+Jul 22 16:17:35.784608 Deleting LSA Router 1.1.1.1 1.1.1.1 (flood state Idle)
+Jul 22 16:17:35.784651 task_timer_delete: OSPF_LSA age <Touched>
+Jul 22 16:17:35.784693 LSA unanalysis started for area 0.0.0.0 Router lsa id 2.2.2.2 adv rtr 2.2.2.2
+Jul 22 16:17:35.784882   Started deleting entry for topology id 0
+Jul 22 16:17:35.784923     Started deleting link type PointToPoint link-id 1.1.1.1
+Jul 22 16:17:35.784964     Finished deleting link type PointToPoint link-id 1.1.1.1
+Jul 22 16:17:35.785004   Finished deleting entry for topology id 0
+Jul 22 16:17:35.785045 LSA unanalysis finished for area 0.0.0.0 Router lsa id 2.2.2.2 adv rtr 2.2.2.2
+Jul 22 16:17:35.785086 Deleting LSA Router 2.2.2.2 2.2.2.2 (flood state Idle)
+Jul 22 16:17:35.785328 Starting internal flash processing for topology default
+Jul 22 16:17:35.785416 OSPF:  multicast address 224.0.0.5/32, route ignored
+Jul 22 16:17:35.785460 Finished internal flash processing for topology default
+Jul 22 16:17:35.785501 New policy call for OSPF from INET.0
+Jul 22 16:17:35.785542 New policy processing complete for OSPF from INET.0
+Jul 22 16:17:35.785605 New policy call for OSPF from INET.3
+Jul 22 16:17:35.785648 New policy processing complete for OSPF from INET.3
+Jul 22 16:17:35.785689 Starting internal flash processing for topology default
+Jul 22 16:17:35.785767 OSPF:  multicast address 224.0.0.5/32, route ignored
+Jul 22 16:17:35.785819 Finished internal flash processing for topology default
+Jul 22 16:17:35.785864 task_timer_delete: OSPF_Flood timer <Touched SpawnJob>
+Jul 22 16:17:35.785905 task_timer_delete: OSPF_Adj limit <Latest>
+Jul 22 16:17:35.785945 task_timer_delete: OSPF_LSDB gen master <>
+Jul 22 16:17:35.785986 task_timer_delete: OSPF_LSDB gen master holddown <>
+Jul 22 16:17:35.786026 task_timer_delete: OSPF_LSDB regen master <>
+Jul 22 16:17:35.786066 task_timer_delete: OSPF_Regen smear timer <Touched>
+Jul 22 16:17:35.786106 task_timer_delete: OSPF_Packet sample timer <Latest>
+Jul 22 16:17:35.786147 task_timer_delete: OSPF_internal timer <Touched>
+Jul 22 16:17:35.786187 task_timer_delete: OSPF_Global xmit timer <Touched>
+Jul 22 16:17:35.786228 task_timer_delete: OSPF_DB Protection ignore timer <Touched>
+Jul 22 16:17:35.786268 task_timer_delete: OSPF_DB Protection reset timer <Touched>
+Jul 22 16:17:35.786586 task_timer_delete: OSPF_DB Protection flush timer <Touched>
+Jul 22 16:17:35.787625 Starting internal flash processing for topology default
+Jul 22 16:17:35.787704 OSPF:  multicast address 224.0.0.5/32, route ignored
+Jul 22 16:17:35.787756 Finished internal flash processing for topology default
+Jul 22 16:17:35.787799 New policy call for OSPF from INET.0
+Jul 22 16:17:35.787855 New policy processing complete for OSPF from INET.0
+Jul 22 16:17:35.787903 New policy call for OSPF from INET.3
+Jul 22 16:17:35.787943 New policy processing complete for OSPF from INET.3
+Jul 22 16:17:35.787983 SPF post spf cleanup starting
+Jul 22 16:17:35.788028   Route 192.168.0.0/31 has been deleted
+Jul 22 16:17:35.788068   Considering autosummary for 192.168.0.0/31, summary possible=0
+Jul 22 16:17:35.788108    All autosummaries deleted
+Jul 22 16:17:35.788148   Considering NSSA autosummary for 192.168.0.0/31, summary not possible
+Jul 22 16:17:35.788192   Route 2.2.2.2 has been deleted
+Jul 22 16:17:35.788232   Considering autosummary for 2.2.2.2, summary possible=0
+Jul 22 16:17:35.788271    All autosummaries deleted
+Jul 22 16:17:35.788311   Considering NSSA autosummary for 2.2.2.2, summary not possible
+Jul 22 16:17:35.788377 SPF post spf cleanup finished
+Jul 22 16:17:35.788426 task_timer_delete: OSPF_Route recalc timer <SpawnJob>
+Jul 22 16:17:35.789301 CHANGE   224.0.0.5/32        nhid 0  OSPF     pref 10/0 metric 1/0 <Delete NoReadvrt Int>
+Jul 22 16:17:35.789350 rt_close: 1/1 route proto OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:35.789350
+Jul 22 16:17:35.789398 Terminating OSPFv2 I/0
+Jul 22 16:17:35.789440 OSPF stopping PPM
+Jul 22 16:17:35.789481 task_close: close socket 13 task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:35.789521 task_reset_socket: task OSPF I/O./var/run/ppmd_control socket 13
+Jul 22 16:17:35.789638 task_timer_reset: reset OSPF I/O./var/run/ppmd_control_PPM Keepalive
+Jul 22 16:17:35.789681 task_timer_reset: reset OSPF I/O./var/run/ppmd_control_PPM Hold
+Jul 22 16:17:35.790192 task_timer_delete: OSPF I/O./var/run/ppmd_control_PPM Keepalive <Touched>
+Jul 22 16:17:35.790416 task_timer_delete: OSPF I/O./var/run/ppmd_control_PPM Hold <Touched>
+Jul 22 16:17:35.790468 task_job_delete: delete background job OSPF PPM processing for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:35.790510 task_delete: deleting task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:35.790551 task_timer_delete: OSPF I/O./var/run/ppmd_control_Task parent <>
+Jul 22 16:17:35.790590 task_job_delete_task: deleting all jobs for task OSPF I/O./var/run/ppmd_control
+Jul 22 16:17:35.790631 task_job_deleted_task: no jobs found for task OSPF I/O./var/run/ppmd_control

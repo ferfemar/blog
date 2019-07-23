@@ -1,12 +1,10 @@
 +++
 categories = ["igps", "ospf"]
 date = "2019-06-16"
-description = "OSPF"
-title = "OSPF"
-head = "OSPF"
+description = "OSPF troubleshooting"
+title = "OSPF troubleshooting"
+head = "OSPF troubleshooting"
 +++
-
-OSPF notes
 
 ## Troubleshooting
 
